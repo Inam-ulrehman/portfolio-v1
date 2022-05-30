@@ -24,7 +24,7 @@ const NavBar = () => {
     <Wrapper>
       <div>
         <NavLink to='/'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
+
         <NavLink to='/products'>Products</NavLink>
         {isSignIn && (
           <NavLink onClick={handleButton} to='/'>
@@ -56,7 +56,7 @@ const Wrapper = styled.nav`
     margin-right: 1rem;
   }
   .btn {
-    padding: 0px 6px;
+    padding: 0px 2px;
   }
 `
 
