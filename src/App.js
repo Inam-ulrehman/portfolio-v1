@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css'
 import {
   Products,
   SingleProduct,
-  About,
   Home,
   Error,
   LoginRegister,
@@ -26,7 +25,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
+
           <Route path='login' element={<LoginRegister />} />
           <Route path='products' element={<Products />} />
           <Route path='products/:productsId' element={<SingleProduct />} />
