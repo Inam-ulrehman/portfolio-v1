@@ -8,8 +8,7 @@ const SingleProduct = () => {
   const { products } = useSelector((state) => state.products)
   const singleProduct = products.find((product) => product.id === productsId)
 
-  const { category, colors, company, description, image, name, price } =
-    singleProduct
+  const { category, company, description, image, name, price } = singleProduct
 
   return (
     <Wrapper>

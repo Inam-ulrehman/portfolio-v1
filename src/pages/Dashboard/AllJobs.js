@@ -14,6 +14,7 @@ const AllJobs = () => {
 
   useEffect(() => {
     dispatch(getAllJobs())
+    // eslint-disable-next-line
   }, [jobs])
   return (
     <Wrapper>

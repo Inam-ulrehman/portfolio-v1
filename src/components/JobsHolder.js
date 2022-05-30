@@ -4,7 +4,7 @@ import moment from 'moment'
 import { jobDeleteId, modalOpen } from '../features/job/jobSlice'
 import { useDispatch } from 'react-redux'
 import { getEditId } from '../features/job/editJobSlice'
-import { useNavigate } from 'react-router-dom'
+
 import { Link } from 'react-router-dom'
 
 const JobsHolder = ({
@@ -19,15 +19,13 @@ const JobsHolder = ({
   updatedAt,
 }) => {
   const dispatch = useDispatch()
-  const navigate = useNavigate()
+
   // handle handleDelete
 
   const handleDelete = (id) => {
     dispatch(modalOpen())
     dispatch(jobDeleteId(id))
   }
-
-  const user = { id, position, company, jobLocation, status, jobType }
 
   const handleEditButton = (id) => {
     dispatch(getEditId(id))

@@ -14,8 +14,9 @@ import { useNavigate } from 'react-router-dom'
 const LoginRegister = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const { name, email, password, isMember, isLoading, existingUser, isSignIn } =
-    useSelector((state) => state.user)
+  const { name, email, password, isMember, isLoading, isSignIn } = useSelector(
+    (state) => state.user
+  )
 
   // handleSubmit
 
@@ -55,6 +56,7 @@ const LoginRegister = () => {
       }, 2000)
       return
     }
+    // eslint-disable-next-line
   }, [isSignIn])
   return (
     <Wrapper>
